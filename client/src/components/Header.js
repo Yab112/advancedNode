@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+  
   renderContent() {
+    console.log("DEBUG:Auth state:", this.props.auth); 
     switch (this.props.auth) {
       case null:
         return;
